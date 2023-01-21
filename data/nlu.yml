@@ -15,7 +15,7 @@ nlu:
     - i had a slow day
     - i am very bored
     - Im kinda bored today 
-    - I've never been more bored
+    - I've never been more bore
     - I was bored
     - This is boring
     - We're all bored
@@ -2184,3 +2184,47 @@ nlu:
     - want to see u very badly
     - I want to see you again
 
+
+- intent: inquire_time
+  examples: |
+    - what time is it?
+    - what time is it in [Amsterdam](place)?
+    - what time is it in [London](place)?
+    - tell me the time in [Lisbon](place)
+    - what is the current time in [Berlin](place)
+    - what time is it in [amsterdam](place)[amsterdam](place)
+- lookup: place
+  examples: |
+    - brussels
+    - zagreb
+    - london
+    - lisbon
+    - amsterdam
+    - seattle
+- intent: where_i_live
+  examples: |
+    - please remember that i live in [Amsterdam](place)?
+    - my house is in [London](place)?
+    - reminder. i live in [Lisbon](place)
+    - my residence is in [Berlin](place)
+    - remember that i live in [london](place)
+- intent: inquire_time_difference
+  examples: |
+    - time difference between [Amsterdam](place)?
+    - what is my time difference with [London](place)?
+    - how big is the time delta with [Berlin](place)?
+    - is there a time difference with [Lisbon](place)?
+    - what is the time difference with [w](place)
+
+- lookup: nameof
+  examples: |
+    - anna
+    - hanna
+
+- intent: inquire_name
+  examples: |
+    - my name is ?
+    - thats my name ?
+    - name ?
+    - name [anna](nameof)
+    - name diffrents [hanna](nameof)

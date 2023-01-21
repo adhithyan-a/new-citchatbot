@@ -11,3 +11,23 @@ rules:
   steps:
   - intent: agent.chatbot
   - action: utter_agent.chatbot
+
+- rule: Tell the time
+  steps:
+  - intent: inquire_time
+  - action: action_tell_time
+
+- rule: Where I live intent
+  steps:
+  - intent: where_i_live
+  - action: action_remember_where
+
+- rule: Time Difference Intent
+  steps:
+  - intent: inquire_time_difference
+  - action: action_time_difference
+
+- rule: Tell the name
+  steps:
+  - intent: inquire_name
+  - action: action_tell_name
